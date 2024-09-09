@@ -1,0 +1,188 @@
+#project-section {
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+  
+      .headline {
+        text-align: center;
+        margin-bottom: 40px;
+  
+        .title {
+          font-size: 32px;
+          font-weight: 700;
+        }
+      }
+  
+      .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      .projects {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+  
+        .project-item {
+          display: block;
+          text-decoration: none;
+          color: inherit;
+  
+          .item {
+            display: flex;
+            flex-direction: row;
+            background-color: #fff;
+            border-radius: 3px;
+            border-bottom: 1px solid black;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            padding-bottom: 20px;
+  
+            &:hover {
+              transform: translateY(-5px);
+            }
+  
+            .item-image {
+              width: 35%;
+              height: auto;
+            }
+  
+            .item-content {
+              padding: 20px;
+              flex: 1;
+  
+              h3 {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 10px;
+              }
+  
+              .item-date {
+                font-size: 14px;
+                color: #888;
+                margin-bottom: 15px;
+              }
+  
+              .item-preamble {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+                color: #333;
+              }
+  
+              .read-more {
+                font-size: 16px;
+                font-weight: 600;
+                color: #007bff;
+                display: inline-block;
+                transition: color 0.3s ease;
+  
+                &:hover {
+                  color: #0056b3;
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      .sidebar {
+        width: 28%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+  
+        .tags {
+          background-color: #f9f9f9;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+          h4 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: 600;
+          }
+  
+          ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+  
+            li {
+              margin: 0;
+  
+              a {
+                display: inline-block;
+                padding: 8px 12px;
+                background-color: #e0e0e0;
+                border-radius: 20px;
+                text-decoration: none;
+                color: #333;
+                font-size: 14px;
+  
+                &:hover {
+                  background-color: #007bff;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+  
+        .help-box {
+          background-color: #f9f9f9;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          text-align: center;
+  
+          h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 600;
+          }
+  
+          p {
+            font-size: 14px;
+            margin-bottom: 20px;
+          }
+  
+          form {
+            display: flex;
+            align-items: center;
+  
+            input {
+              flex: 1;
+              padding: 10px;
+              font-size: 14px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+            }
+  
+            button {
+              background-color: #007bff;
+              color: white;
+              border: none;
+              padding: 10px;
+              border-radius: 5px;
+              margin-left: 10px;
+  
+              i {
+                font-size: 16px;
+              }
+  
+              &:hover {
+                background-color: #0056b3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
