@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .btn-primary {
   background-color: #4F5955;
@@ -1040,6 +1041,10 @@ footer .container .copyright-text .credit-text {
   transition: 0.2s ease-in-out;
 }
 
+#project-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 #project-section .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1068,64 +1073,81 @@ footer .container .copyright-text .credit-text {
   text-decoration: none;
   color: inherit;
 }
+#project-section .container .projects .project-item:hover .item .item-image {
+  transform: scale(1.03);
+  transition: 0.1s ease-in-out;
+}
+#project-section .container .projects .project-item:hover .arrow {
+  margin-left: 5px;
+  transition: 0.1s ease-in-out;
+}
 #project-section .container .projects .project-item .item {
   display: flex;
   flex-direction: row;
   background-color: #fff;
   border-radius: 3px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ECECEC;
   overflow: hidden;
   transition: transform 0.3s ease;
   padding-bottom: 20px;
 }
-#project-section .container .projects .project-item .item:hover {
-  transform: translateY(-5px);
-}
 #project-section .container .projects .project-item .item .item-image {
-  width: 35%;
-  height: auto;
+  transition: 0.1s ease-in-out;
 }
 #project-section .container .projects .project-item .item .item-content {
   padding: 20px;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #project-section .container .projects .project-item .item .item-content h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
+  color: #4F5955;
 }
 #project-section .container .projects .project-item .item .item-content .item-date {
   font-size: 14px;
-  color: #888;
+  color: #9C9EA6;
   margin-bottom: 15px;
 }
+#project-section .container .projects .project-item .item .item-content .item-date i {
+  margin-right: 5px;
+  color: #9C9EA6;
+}
 #project-section .container .projects .project-item .item .item-content .item-preamble {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 14px;
   margin-bottom: 20px;
-  color: #333;
+  color: #535656;
 }
 #project-section .container .projects .project-item .item .item-content .read-more {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
-  color: #007bff;
+  color: #535656;
   display: inline-block;
   transition: color 0.3s ease;
 }
+#project-section .container .projects .project-item .item .item-content .read-more i {
+  color: #D9C3A9;
+}
 #project-section .container .projects .project-item .item .item-content .read-more:hover {
   color: #0056b3;
+}
+#project-section .container .projects .project-item .item .item-content .read-more:hover i {
+  margin-left: 5px;
+  transition: 0.1s ease-in-out;
 }
 #project-section .container .sidebar {
   width: 28%;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  border-left: 1px solid #ECECEC;
+  padding-left: 20px;
 }
 #project-section .container .sidebar .tags {
-  background-color: #f9f9f9;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 #project-section .container .sidebar .tags h4 {
   margin-bottom: 15px;
@@ -1145,56 +1167,200 @@ footer .container .copyright-text .credit-text {
 #project-section .container .sidebar .tags ul li a {
   display: inline-block;
   padding: 8px 12px;
-  background-color: #e0e0e0;
+  border: 1px solid #E6E6E6;
   border-radius: 20px;
   text-decoration: none;
-  color: #333;
+  color: #4F5955;
   font-size: 14px;
+  transition: 0.1s ease-in-out;
 }
 #project-section .container .sidebar .tags ul li a:hover {
-  background-color: #007bff;
+  background-color: #4F5955;
   color: white;
+  transition: 0.1s ease-in-out;
 }
 #project-section .container .sidebar .help-box {
-  background-color: #f9f9f9;
+  background-color: #4F5955;
+  border-radius: 3px;
+  color: #fff;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  text-align: left;
 }
-#project-section .container .sidebar .help-box h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
+#project-section .container .sidebar .help-box h2 {
+  color: #F2EDDC;
+  font-size: 22px;
   font-weight: 600;
 }
 #project-section .container .sidebar .help-box p {
   font-size: 14px;
-  margin-bottom: 20px;
+  font-weight: 400;
+  color: white;
 }
 #project-section .container .sidebar .help-box form {
-  display: flex;
-  align-items: center;
+  margin-top: 10px;
 }
-#project-section .container .sidebar .help-box form input {
-  flex: 1;
+#project-section .container .sidebar .help-box form input[type=email] {
+  width: 100%;
   padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
 }
 #project-section .container .sidebar .help-box form button {
+  padding: 10px 20px;
   background-color: #007bff;
-  color: white;
+  color: #fff;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
-  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 #project-section .container .sidebar .help-box form button i {
-  font-size: 16px;
+  margin-left: 5px;
 }
-#project-section .container .sidebar .help-box form button:hover {
-  background-color: #0056b3;
+
+.project-details {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.project-details .container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  /* Sidoinnehållet */
+}
+.project-details .container .main-content {
+  width: 70%;
+  padding-right: 20px;
+}
+.project-details .container .main-content .date {
+  margin-bottom: 20px;
+}
+.project-details .container .main-content .date i {
+  color: #9C9EA6;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 5px;
+}
+.project-details .container .main-content .date p {
+  color: #9C9EA6;
+  font-size: 14px;
+  font-weight: 400;
+}
+.project-details .container .main-content .headline {
+  color: #4F5955;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.project-details .container .main-content .content li {
+  color: #535656;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.project-details .container .main-content .content li p {
+  color: #535656;
+}
+.project-details .container .main-content .content li::marker {
+  color: #5D8C87;
+}
+.project-details .container .main-content .content .image {
+  width: 100%;
+}
+.project-details .container .main-content .content .image-center {
+  padding-right: 20px;
+}
+.project-details .container .main-content .content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 400;
+  color: #535656;
+}
+.project-details .container .main-content .content h3 {
+  font-size: 18px;
+  color: #4F5955;
+  font-weight: 700;
+}
+.project-details .container .main-content .content .custom-headline {
+  margin-left: 20px;
+}
+.project-details .container .sidebar {
+  width: 28%; /* Ta 28% av bredden */
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgb(235, 234, 234);
+  padding-left: 20px;
+}
+.project-details .container .sidebar .tags {
+  padding: 20px;
+}
+.project-details .container .sidebar .tags h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.project-details .container .sidebar .tags ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.project-details .container .sidebar .tags ul li {
+  margin: 0;
+}
+.project-details .container .sidebar .tags ul li a {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #E6E6E6;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #4F5955;
+  font-size: 14px;
+  transition: 0.1s ease-in-out;
+}
+.project-details .container .sidebar .tags ul li a:hover {
+  background-color: #4F5955;
+  color: white;
+  transition: 0.1s ease-in-out;
+}
+.project-details .container .sidebar .help-box {
+  background-color: #4F5955;
+  border-radius: 3px;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+.project-details .container .sidebar .help-box h2 {
+  color: #F2EDDC;
+  font-size: 22px;
+  font-weight: 600;
+}
+.project-details .container .sidebar .help-box p {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+.project-details .container .sidebar .help-box form {
+  margin-top: 10px;
+}
+.project-details .container .sidebar .help-box form input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+.project-details .container .sidebar .help-box form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.project-details .container .sidebar .help-box form button i {
+  margin-left: 5px;
 }
 
 body {
