@@ -91,21 +91,33 @@
     }
 
     .main-content {
-        flex: 2; /* Ge huvudkolumnen mer utrymme */
+        flex: 2;
         background-color: #fff;
         padding: 20px;
 
+        li {
+            color: $bodytext-color;
+            font-size: 14px;
+           p {
+            color: $bodytext-color;
+           }
+        }
 
-        h1 {
-            font-size: 32px;
-            color: #333;
+        li::marker {
+            color: #D9C3A9;
+        }
+
+        h4 {
+            font-size: 25px;
+            color: $primary-color;
             margin-bottom: 20px;
+            font-weight: 700;
         }
 
         p {
-            font-size: 16px;
+            font-size: 14px;
             line-height: 1.6;
-            color: #666;
+            color: $bodytext-color;
         }
 
         img {

@@ -19,9 +19,9 @@
 </head>
 <body>
 	<div class="wrapper">
-		<partial name="TopBar" />
+		@await Html.PartialAsync("partials/static/TopBar.cshtml")
 
-		<partial name="Header" />
+		@await Html.PartialAsync("partials/static/Header.cshtml")
 
 		@if (Model.ContentType.Alias != "homePage")
         {
@@ -34,7 +34,7 @@
 		</main>
 
 
-		<partial name="Footer" />
+		@await Html.PartialAsync("partials/static/Footer.cshtml")
 
 	</div>
 

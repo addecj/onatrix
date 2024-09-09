@@ -945,19 +945,30 @@ footer .container .copyright-text .credit-text {
   margin-left: 5px;
 }
 .service-details .main-content {
-  flex: 2; /* Ge huvudkolumnen mer utrymme */
+  flex: 2;
   background-color: #fff;
   padding: 20px;
 }
-.service-details .main-content h1 {
-  font-size: 32px;
-  color: #333;
+.service-details .main-content li {
+  color: #535656;
+  font-size: 14px;
+}
+.service-details .main-content li p {
+  color: #535656;
+}
+.service-details .main-content li::marker {
+  color: #D9C3A9;
+}
+.service-details .main-content h4 {
+  font-size: 25px;
+  color: #4F5955;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 .service-details .main-content p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
-  color: #666;
+  color: #535656;
 }
 .service-details .main-content img {
   width: 100%;

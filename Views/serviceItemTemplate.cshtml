@@ -29,9 +29,6 @@
                     <p>online support 24/7, we are here to help you</p>
                     <form action="#" method="post">
                         <input type="email" placeholder="E-mail address">
-                        <button type="submit">
-                            <i class="fa-solid fa-envelope"></i>
-                        </button>
                     </form>
                 </div>
             </aside>
@@ -62,4 +59,4 @@
 </section>
 
 
-<partial name="NextProject" />
+@await Html.PartialAsync("partials/static/NextProject.cshtml")
