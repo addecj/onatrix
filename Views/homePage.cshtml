@@ -81,38 +81,7 @@
             <h5>@Model?.Value("ourServiceSectionTitle")</h5>
             <h2>@Model?.Value("ourServiceHeadline")</h2>
         </div>
-        <div class="service-content">
-            <div class="service-box">
-                <h3>@Model?.Value("ourServiceBoxTitleOne")</h3>
-                <img class="service-image-one" src="@serviceImageOne" alt="@Model?.Value("ourServiceBoxImageOne")">
-                <p>@Model?.Value("ourServiceBoxTextOne")</p>
-            </div>
-            <div class="service-box">
-                <h3>@Model?.Value("ourServiceBoxTitleTwo")</h3>
-                <img class="service-image-two" src="@serviceImageTwo" alt="@Model?.Value("ourServiceBoxImageTwo")">
-                <p>@Model?.Value("ourServiceBoxTextTwo")</p>
-            </div>
-            <div class="service-box">
-                <h3>@Model?.Value("ourServiceBoxTitleThree")</h3>
-                <img class="service-image-three" src="@serviceImageThree" alt="@Model?.Value("ourServiceBoxImageThree")">
-                <p>@Model?.Value("ourServiceBoxTextThree")</p>
-            </div>
-            <div class="service-box">
-                <h3>@Model?.Value("ourServiceBoxTitleFour")</h3>
-                <img class="service-image-four" src="@serviceImageFour" alt="@Model?.Value("ourServiceBoxImageFour")">
-                <p>@Model?.Value("ourServiceBoxTextFour")</p>
-            </div>
-            <div class="service-box">
-                <h3>@Model?.Value("ourServiceBoxTitleFive")</h3>
-                <img class="service-image-five" src="@serviceImageFive" alt="@Model?.Value("ourServiceBoxImageFive")">
-                <p>@Model?.Value("ourServiceBoxTextFive")</p>
-            </div>
-            <div class="service-box">
-                <h3>@Model?.Value("ourServiceBoxTitleSix")</h3>
-                <img class="service-image-six" src="@serviceImageSix" alt="@Model?.Value("ourServiceBoxImageSix")">
-                <p>@Model?.Value("ourServiceBoxTextSix")</p>
-            </div>
-        </div>
+        @await Html.PartialAsync("partials/serviceList.cshtml")
     </div>
 </section>
 
