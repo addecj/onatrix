@@ -3,6 +3,10 @@
     position: relative;
     background-color: #F7F7F7;
 
+    &.special-background {
+        background-color: white; // Vit bakgrund på contact sidan
+    }
+
 
     .container {
         position: relative;

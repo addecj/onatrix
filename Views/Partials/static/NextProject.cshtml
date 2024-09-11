@@ -22,11 +22,14 @@
 	var iconTwo = settings?.Value<string>("NextProjectFontAwesomeIconClass2") ?? "";
 	var iconThree = settings?.Value<string>("NextProjectFontAwesomeIconClass3") ?? "";
 
+	// kollar om vi är på contact sidan och sätter en vit bakgrund istället
+	var isContactPage = Context.Request.Path.ToString().ToLower().Contains("/contact"); 
+
 	
 }
 
 
-<section id="aboutUsNextProject" class="aboutUsNextProject">
+<section id="aboutUsNextProject" class="aboutUsNextProject @(isContactPage ? "special-background" : "")">
 	<div class="container">
 		<div class="image-wrapper">
 			<img class="nextProjectImageOne" src="@imageOne" alt="@Model?.Value("NextProjectImageOne")">

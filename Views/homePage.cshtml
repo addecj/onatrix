@@ -167,13 +167,4 @@
     </div>
 </section>
 
-<section id="company" class="company">
-    <div class="container">
-        <img class="companyImageOne" src="@companyImageOne" alt="@Model?.Value("companyImageOne")">
-        <img class="companyImageTwo" src="@companyImageTwo" alt="@Model?.Value("companyImageTwo")">
-        <img class="companyImageThree" src="@companyImageThree" alt="@Model?.Value("companyImageThree")">
-        <img class="companyImageFour" src="@companyImageFour" alt="@Model?.Value("companyImageFour")">
-        <img class="companyImageFive" src="@companyImageFive" alt="@Model?.Value("companyImageFive")">
-        <img class="companyImageSix" src="@companyImageSix" alt="@Model?.Value("companyImageSix")">
-    </div>
-</section>
+@await Html.PartialAsync("partials/static/companySection.cshtml")
